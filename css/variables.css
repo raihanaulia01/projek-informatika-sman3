@@ -6,7 +6,7 @@
   --accent: #AAC030;
   --red: FA4141;
   --background: #060A0E;
-  --background-elevated: #0B1219;
+  --background-elevated: hsl(210, 39%, 10%);
   --text: #E7ECF4;
 
   --text-hover: hsl(217, 37%, 85%);

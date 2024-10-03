@@ -39,7 +39,7 @@ nav {
   position: fixed;
   width: 100%;
   padding: 1.5rem;
-  backdrop-filter: blur(16px) saturate(50%);
+  backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--secondary-hover);
   background-color: var(--background-transparent);
 }

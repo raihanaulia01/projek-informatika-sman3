@@ -113,6 +113,27 @@ section:not(.companies) {
   height: 40px;
 }
 
+section.solution {
+  margin-top: 6rem;
+}
+
+.solution h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.solution .solution__wrapper {
+  margin-top: 2rem;
+  background-color: var(--background-elevated);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+}
+
+.collapsible {
+  max-height: 0;
+  overflow: hidden;
+}
+
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - 25px));
