@@ -57,12 +57,28 @@ const addAnimation = () => {
   });
 }
 
+const scrollToElement = (element) => {
+  const parentPosition = element.getBoundingClientRect().top + window.scrollY;
+  const navHeight = document.querySelector("nav").offsetHeight;
+  window.scroll({
+    top: parentPosition-navHeight-16,
+    behavior: "smooth"
+  });
+  console.log(`${element} ${parentPosition}, ${navHeight}`);
+}
+
 for (let i = 0; i < solutionWrappers.length; i++) {
   solutionWrappers[i].addEventListener("click", () => {
     collapsibles[i].classList.toggle("active");
     const link = document.querySelector(`#solution${i+1} a`);
+
     link.textContent === "See more" ? link.textContent="Collapse" : link.textContent="See more";
-    collapsibles[i].scrollIntoView();
+    scrollToElement(solutionWrappers[i]);
+  });
+
+  const links = document.querySelectorAll(".solution__wrapper a");
+  links[i].addEventListener("click", (e) => {
+    e.preventDefault();
   });
 }
 
