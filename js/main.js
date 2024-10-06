@@ -1,5 +1,7 @@
 const companyLogosWrapper = document.getElementById("company-logos");
 const scrollers = document.querySelectorAll(".scroll-container");
+const collapsibles = document.getElementsByClassName("collapsible");
+const solutionWrappers = document.getElementsByClassName("solution__wrapper");
 
 // const populatePlaceholderLogos = (logosWrapper) => {
 //   const url = "img/company-logos/Group-";
@@ -52,6 +54,15 @@ const addAnimation = () => {
       duplicatedItem.setAttribute('aria-hidden', true);
       scrollerInner.appendChild(duplicatedItem);
     });
+  });
+}
+
+for (let i = 0; i < solutionWrappers.length; i++) {
+  solutionWrappers[i].addEventListener("click", () => {
+    collapsibles[i].classList.toggle("active");
+    const link = document.querySelector(`#solution${i+1} a`);
+    link.textContent === "See more" ? link.textContent="Collapse" : link.textContent="See more";
+    collapsibles[i].scrollIntoView();
   });
 }
 
