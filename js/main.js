@@ -71,7 +71,6 @@ for (let i = 0; i < solutionWrappers.length; i++) {
   solutionWrappers[i].addEventListener("click", () => {
     collapsibles[i].classList.toggle("active");
     const link = document.querySelector(`#solution${i+1} a`);
-
     link.textContent === "See more" ? link.textContent="Collapse" : link.textContent="See more";
     scrollToElement(solutionWrappers[i]);
   });

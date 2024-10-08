@@ -43,7 +43,7 @@ section:not(.companies) {
   gap: 1rem;
 }
 
-.tagline__text button {
+button.primary {
   padding: .7rem 2rem;
   width: fit-content;
   font-size: 1rem;
@@ -56,12 +56,12 @@ section:not(.companies) {
   transition: background-color 100ms ease-out, box-shadow 150ms ease;
 }
 
-.tagline__text button:hover {
+button.primary:hover {
   background-color: var(--primary-hover);
   box-shadow: 0 0 50px var(--primary-box-shadow);
 }
 
-.tagline__text button:active {
+button.primary:active {
   background-color: var(--primary-active);
   box-shadow: 0 0 70px var(--primary-box-shadow);
 }
@@ -74,6 +74,10 @@ section:not(.companies) {
   gap: 3rem;
   align-items: center;
   overflow: hidden;
+}
+
+.companies h2 {
+  font-size: 1.7rem;
 }
 
 .scroll-container {
@@ -119,7 +123,7 @@ section.solution {
 
 .solution h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .solution__wrapper h3 {
@@ -180,6 +184,63 @@ ul {
     /* 25 px => half of gap*/
   }
 }
+
+
+section.contact {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+
+  a {
+    color: var(--primary);
+
+    &:hover {
+      color: var(--primary-hover);
+    }
+  }
+
+  .benefits {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .benefits img {
+    width: 200px;
+    height: 200px;
+    color: var(--accent);
+  }
+
+  .benefits>div {
+    padding: 1rem;
+    background-color: var(--background-elevated);
+    border-radius: var(--border-radius);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits p {
+    text-align: center;
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+}
+
 
 @media (width < 876px) {
   .tagline {
