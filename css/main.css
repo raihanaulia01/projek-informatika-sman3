@@ -217,8 +217,9 @@ section.contact {
   }
 
   .benefits img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
     color: var(--accent);
   }
 
@@ -226,14 +227,15 @@ section.contact {
     padding: 1rem;
     background-color: var(--background-elevated);
     border-radius: var(--border-radius);
-    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
   }
 
-  .benefits p {
+  .benefits h4 {
     text-align: center;
+    margin-top: 1rem;
   }
 
   button {
@@ -256,6 +258,14 @@ section.contact {
     width: 80%;
   }
 
+  .benefits {
+    flex-wrap: wrap;
+  }
+
+  .benefits>div {
+    flex-basis: 45%;
+  }
+
   .nav__wrapper .links {
     display: none;
   }
@@ -269,6 +279,10 @@ section.contact {
 }
 
 @media (width < 600px) {
+  main {
+    margin: 5rem auto 2rem auto;
+  }
+
   nav .logo img {
     width: 15vw;
   }
@@ -293,5 +307,14 @@ section.contact {
     font-size: 1.2rem;
     text-align: center;
     max-width: var(--max-width);
+  }
+
+  .benefits>div {
+    flex-basis: 90%;
+  }
+
+  .benefits img {
+    width: 100px;
+    height: 100px;
   }
 }
