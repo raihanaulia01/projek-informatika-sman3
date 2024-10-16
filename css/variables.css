@@ -19,6 +19,7 @@
 
   --border-radius: 5px;
   --max-width: min(1280px, 90vw);
+  --h1-size: clamp(1.5rem, 4vw, 3rem);
   --montserrat: "Montserrat", system-ui;
   --inter: "Inter", system-ui;
 }

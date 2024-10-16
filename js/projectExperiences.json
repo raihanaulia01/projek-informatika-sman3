@@ -1,0 +1,182 @@
+[
+  {
+      "year": 2024,
+      "project_desc": "Kepware Installation and Config",
+      "category": "Scada and Automation System",
+      "client": "PT. Givaudan Indonesia"
+  },
+  {
+      "year": 2024,
+      "project_desc": "Interfacing Machine",
+      "category": "Scada and Automation System",
+      "client": "PT. Lucky Print Abadi"
+  },
+  {
+      "year": 2024,
+      "project_desc": "Upgrade Version of Production Data Management System and Migration Database",
+      "category": "Scada and Automation System",
+      "client": "Husky CNOOC Madura Ltd."
+  },
+  {
+      "year": 2024,
+      "project_desc": "PI Web API",
+      "category": "Scada and Automation System",
+      "client": "PT. Indokordsa Tbk"
+  },
+  {
+      "year": 2024,
+      "project_desc": "Upgrade PLC NYP CCR PLC Young",
+      "category": "Scada and Automation System",
+      "client": "PT. Indokordsa Tbk"
+  },
+  {
+      "year": 2024,
+      "project_desc": "Additional Configuration of HMI and IO - Doup Project Jresource",
+      "category": "Scada and Automation System",
+      "client": "Medco E&P Natuna Ltd"
+  },
+  {
+      "year": 2024,
+      "project_desc": "PLC Program",
+      "category": "Scada and Automation System",
+      "client": "Medco E&P Natuna Ltd"
+  },
+  {
+      "year": 2024,
+      "project_desc": "Belanak Air Dryer",
+      "category": "Scada and Automation System",
+      "client": "Medco E&P Natuna Ltd"
+  },
+  {
+      "year": 2024,
+      "project_desc": "TMMX (Machine Learning)",
+      "category": "Scada and Automation System",
+      "client": "Medco E&P Natuna Ltd"
+  },
+  {
+      "year": 2024,
+      "project_desc": "Engineering Services for Modifikasi PLC NYP",
+      "category": "Scada and Automation System",
+      "client": "Medco E&P Natuna Ltd"
+  },
+  {
+      "year": 2023,
+      "project_desc": "Upgrade SCADA PGE UBL 1 dan 2",
+      "category": "Scada and Automation System",
+      "client": "Pertamina Geothermal"
+  },
+  {
+      "year": 2023,
+      "project_desc": "Implementation Automation System in DouUp Gold",
+      "category": "Scada and Automation System",
+      "client": "Jresource"
+  },
+  {
+      "year": 2023,
+      "project_desc": "OSI PI for Graphic Development, PI Vision and Service - Upgrade OSI PI System",
+      "category": "Scada and Automation System",
+      "client": "PT Tripatra Engineer"
+  },
+  {
+      "year": 2023,
+      "project_desc": "Integration of Bronang / Hangtuah",
+      "category": "Scada and Automation System",
+      "client": "Medco E&P Natuna Ltd"
+  },
+  {
+      "year": 2023,
+      "project_desc": "Cable Installation, Commissioning Controllogix SCADA",
+      "category": "Scada and Automation System",
+      "client": "Medco E&P Natuna Ltd"
+  },
+  {
+      "year": 2023,
+      "project_desc": "Preventive Maintenance DMZ Hangtuah",
+      "category": "Scada and Automation System",
+      "client": "Medco E&P Natuna Ltd"
+  },
+  {
+      "year": 2023,
+      "project_desc": "Implementation DFOS System Line B14",
+      "category": "Scada and Automation System",
+      "client": "PT Unilever"
+  },
+  {
+      "year": 2023,
+      "project_desc": "Training OSI PI",
+      "category": "Scada and Automation System",
+      "client": "PT Pertamina"
+  },
+  {
+      "year": 2023,
+      "project_desc": "PLC & HMI Upgrade Air Dryer",
+      "category": "Scada and Automation System",
+      "client": "PT. Medco Energy"
+  },
+  {
+      "year": 2023,
+      "project_desc": "Kepware Data Logger",
+      "category": "Scada and Automation System",
+      "client": "PT. Semen Indonesia"
+  },
+  {
+      "year": 2023,
+      "project_desc": "Kepware Data Logger",
+      "category": "Scada and Automation System",
+      "client": "PT. Asahimas Flat Glass Tbk."
+  },
+  {
+      "year": 2023,
+      "project_desc": "Kepware OPC Server & advance tag",
+      "category": "Scada and Automation System",
+      "client": "PT. Henkel Adhesive Technologies"
+  },
+  {
+      "year": 2022,
+      "project_desc": "Project Operator Traffic Controller (OTC) TBB Factory Cikarang",
+      "category": "Scada and Automation System",
+      "client": "Unilever Tbk"
+  },
+  {
+      "year": 2022,
+      "project_desc": "OPP Process Control Upgrade (SCADA)",
+      "category": "Scada and Automation System",
+      "client": "PT. Bumi Suksesindo"
+  },
+  {
+      "year": 2022,
+      "project_desc": "Retrofit Package System SLC HT",
+      "category": "Scada and Automation System",
+      "client": "Medco E&P Natuna Ltd"
+  },
+  {
+      "year": 2022,
+      "project_desc": "Upgrade Of PCC Data Server",
+      "category": "Scada and Automation System",
+      "client": "Medco E&P Natuna Ltd"
+  },
+  {
+      "year": 2022,
+      "project_desc": "Engineering Service Programming And Installation PC & HMI Cikarang Listrindo",
+      "category": "Scada and Automation System",
+      "client": "PT Cikarang Listrindo Tbk (Cikarang Listrindo)"
+  },
+  {
+      "year": 2022,
+      "project_desc": "Engineering Service Suban Early",
+      "category": "Scada and Automation System",
+      "client": "ConocoPhillips Indonesia Inc ltd"
+  },
+  {
+      "year": 2022,
+      "project_desc": "Provision of AGX Custody Metering Supervisory and OPC Server Retrofit",
+      "category": "Scada and Automation System",
+      "client": "Premier Oil Natuna B.V"
+  },
+  {
+      "year": 2022,
+      "project_desc": "HT SSS",
+      "category": "Scada and Automation System",
+      "client": "Medco E&P Natuna Ltd"
+  }
+]
