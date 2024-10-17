@@ -4,10 +4,10 @@
   --primary: #9CB5E2;
   --secondary: #3B2F65;
   --accent: #AAC030;
-  --red: FA4141;
   --background: #060A0E;
-  --background-elevated: hsl(210, 39%, 10%);
+  --background-elevated: #11111f;
   --text: #E7ECF4;
+  --red: #FA4141;
 
   --text-hover: hsl(217, 37%, 85%);
   --primary-hover: hsl(219, 55%, 65%);

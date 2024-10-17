@@ -29,41 +29,11 @@ section:not(.companies) {
   color: var(--primary);
 }
 
-.tagline__text .tag {
-  background: linear-gradient(to right, var(--primary), var(--accent));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .tagline__text {
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-button.primary {
-  padding: .7rem 2rem;
-  width: fit-content;
-  font-size: 1rem;
-  font-family: var(--montserrat);
-  border: none;
-  border-radius: var(--border-radius);
-  background-color: var(--primary);
-  color: var(--background);
-  cursor: pointer;
-  transition: background-color 100ms ease-out, box-shadow 150ms ease;
-}
-
-button.primary:hover {
-  background-color: var(--primary-hover);
-  box-shadow: 0 0 50px var(--primary-box-shadow);
-}
-
-button.primary:active {
-  background-color: var(--primary-active);
-  box-shadow: 0 0 70px var(--primary-box-shadow);
 }
 
 .companies {
@@ -102,7 +72,7 @@ button.primary:active {
 
 .scroll-container[data-animated=true] #company-logos {
   flex-wrap: nowrap;
-  animation: 80s scroll linear infinite reverse;
+  animation: 100s scroll linear infinite reverse;
   width: max-content;
 }
 
@@ -219,12 +189,12 @@ section.contact {
   .benefits img {
     width: 150px;
     height: 150px;
-    padding: 1rem;
+    padding: 0 1rem;
     color: var(--accent);
   }
 
   .benefits>div {
-    padding: 1rem;
+    padding: 2rem;
     background-color: var(--background-elevated);
     border-radius: var(--border-radius);
     display: flex;

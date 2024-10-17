@@ -1,0 +1,85 @@
+@import url(variables.css);
+@import url(general.css);
+@import url(general-responsive.css);
+
+main {
+  margin-top: 13rem;
+}
+
+section {
+  max-width: var(--max-width);
+}
+
+section.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  h1 {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    ;
+    /* color: var(--primary); */
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+
+  img {
+    width: min(40vw, 550px);
+    aspect-ratio: 4/2;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+  }
+}
+
+section.ict-solutions {
+  margin-top: 6rem;
+
+  h2,
+  p#tag {
+    text-align: center;
+  }
+
+  p#tag {
+    margin-top: .5rem;
+  }
+
+  .wrapper {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+
+  .wrapper .card {
+    width: 300px;
+
+    p {
+      margin-top: .5rem;
+      text-align: left;
+    }
+  }
+}
+
+@media (width < 876px) {
+  section.header {
+    flex-direction: column;
+
+    img {
+      width: 80vw;
+    }
+  }
+}
+
+@media (width < 600px) {
+  main {
+    margin-top: 7rem;
+  }
+
+  section.header img {
+    width: 100%;
+  }
+}

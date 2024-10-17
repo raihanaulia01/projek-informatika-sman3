@@ -16,12 +16,15 @@ section.header {
   justify-content: space-between;
   align-items: center;
 
-  .wrapper p {
-    margin-top: 1rem;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   h1 {
     font-size: 2rem;
+    /* color: var(--primary); */
   }
 
   img {
