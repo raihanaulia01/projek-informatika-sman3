@@ -29,6 +29,8 @@ section {
 }
 
 section.experiences {
+  margin-top: 2rem;
+
   h2 {
     text-align: center;
   }
@@ -45,7 +47,7 @@ section.experiences {
     padding: .5rem;
   }
 
-  table tr:nth-child(even) {
+  table tr:nth-child(odd) {
     background-color: var(--background-elevated);
   }
 

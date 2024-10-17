@@ -170,7 +170,7 @@ section.solution {
   transition: max-height 200ms ease;
 }
 
-ul {
+.collapsible ul {
   margin-left: 2rem;
 }
 

@@ -1,0 +1,34 @@
+@media (width < 876px) {
+  .nav__wrapper .links {
+    display: none;
+  }
+
+  .nav__wrapper .menu-icon {
+    display: block;
+    width: 1.5rem;
+    color: var(--text);
+    cursor: pointer;
+  }
+}
+
+@media (width < 600px) {
+  main {
+    margin: 5rem auto 2rem auto;
+  }
+
+  nav .logo img {
+    width: 15vw;
+  }
+
+  nav .logo h2 {
+    font-size: 4vw;
+  }
+
+  nav {
+    padding: .5rem;
+  }
+
+  .company-logo {
+    height: 30px;
+  }
+}
