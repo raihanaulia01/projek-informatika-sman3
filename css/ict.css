@@ -78,12 +78,60 @@ section.ict-solutions {
   }
 }
 
+section.benefits {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .wrapper .card {
+    width: calc(25%-0.5rem);
+    display: flex;
+    padding: 1.5vw;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 25%;
+    background-color: var(--background-elevated);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--secondary);
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+    padding: 0 1rem;
+  }
+}
+
 @media (width < 876px) {
   section.header {
     flex-direction: column;
 
     img {
       width: 80vw;
+    }
+  }
+
+  section.benefits {
+    .wrapper {
+      flex-wrap: wrap;
+    }
+
+    .wrapper .card {
+      flex-basis: 45%;
+      padding: 1.5rem;
     }
   }
 }
@@ -95,5 +143,28 @@ section.ict-solutions {
 
   section.header img {
     width: 100%;
+  }
+
+  section.ict-solutions .wrapper .card {
+    width: 100%;
+
+    img {
+      width: 40vw;
+    }
+  }
+
+  section.benefits {
+    &>div {
+      flex-basis: 90%;
+    }
+
+    .benefits img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .wrapper .card {
+      flex-basis: 90%;
+    }
   }
 }

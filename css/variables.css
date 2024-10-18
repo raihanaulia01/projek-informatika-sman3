@@ -13,7 +13,8 @@
   --primary-hover: hsl(219, 55%, 65%);
   --primary-active: hsl(219, 55%, 55%);
   --primary-box-shadow: hsla(219, 55%, 60%, 0.4);
-  --secondary-hover: hsl(253, 36%, 18%);
+  --secondary-hover: #292145;
+  --secondary-active: #141023;
   --background-transparent: hsla(210, 40%, 4%, 0.5);
   --_form-color: #0F1A24;
 

@@ -190,17 +190,18 @@ section.contact {
     width: 150px;
     height: 150px;
     padding: 0 1rem;
-    color: var(--accent);
   }
 
   .benefits>div {
-    padding: 2rem;
+    border: 1px solid var(--secondary);
+    padding: 2vw;
     background-color: var(--background-elevated);
     border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
+    width: 25%;
   }
 
   .benefits h4 {
