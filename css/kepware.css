@@ -83,6 +83,11 @@ section.offers {
     border: 1px solid var(--secondary);
   }
 
+  .card h3 {
+    width: 100%;
+    text-align: center;
+  }
+
   .card img {
     height: 100px;
     padding: 0 1rem;

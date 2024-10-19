@@ -39,6 +39,7 @@ section.experiences {
 
   table {
     margin-top: 2rem;
+    width: 100%;
   }
 
   table,
@@ -46,7 +47,7 @@ section.experiences {
   td {
     border: 1px solid var(--secondary);
     border-collapse: collapse;
-    padding: .5rem;
+    padding: .5rem 1rem;
   }
 
   table tr:nth-child(odd) {
@@ -55,6 +56,37 @@ section.experiences {
 
   tr th {
     background-color: var(--secondary-hover);
+  }
+
+  .table-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 100%;
+  }
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.arrow img {
+  height: 1rem;
+}
+
+.arrow:has(a.disabled) {
+  filter: brightness(50%);
+
+  a:hover {
+    cursor: default;
+    color: var(--primary);
+  }
+
+  a:active {
+    color: var(--primary);
   }
 }
 

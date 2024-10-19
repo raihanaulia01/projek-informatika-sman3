@@ -1,4 +1,5 @@
 // import experiencesJSON from "./projectExperiences.json"
+let experiences = [];
 const experiencesData = fetch('js/projectExperiences.json')
 .then(response => {
   if (!response.ok) {
@@ -7,16 +8,24 @@ const experiencesData = fetch('js/projectExperiences.json')
   return response.json();
   })
   .then(data => {
-    populateTable(data);
+    populateTable(data, 0);
+    experiences = data;
   })
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
   });
 
-const populateTable = (data) => {
-  const table = document.querySelector("#project-experiences-table");
-  console.log(table);
-  data.forEach(project => {
+let currentPage = 0;
+let rowsPerPage = 100;
+
+const populateTable = (data, page) => {
+  const tableBody = document.querySelector("#project-experiences-table tbody");
+  const start = page*rowsPerPage;
+  const end = start+rowsPerPage;
+  const paginatedData = data.slice(start, end);
+  tableBody.innerHTML = "";
+  
+  paginatedData.forEach(project => {
     const row = document.createElement('tr');
 
     const yearCell = document.createElement('td');
@@ -35,8 +44,33 @@ const populateTable = (data) => {
     clientCell.textContent = project.client;
     row.appendChild(clientCell);
 
-    table.appendChild(row);
+    tableBody.appendChild(row);
   });
 }
 
-// populateTable(experiencesJSON);
+document.getElementById("next").addEventListener("click", (e) => {
+  e.preventDefault();
+  if ((currentPage + 1) * rowsPerPage < experiences.length) {
+    document.getElementById("next").classList.remove('disabled');
+    document.getElementById("previous").classList.remove('disabled');
+    
+    if ((currentPage+2)*rowsPerPage > experiences.length) {
+      document.getElementById("next").classList.add('disabled');
+    }
+    currentPage++;
+    console.log(currentPage);
+    populateTable(experiences, currentPage);
+  }
+});
+document.getElementById("previous").addEventListener("click", (e) => {
+  e.preventDefault();
+  if (currentPage > 0) {
+    document.getElementById("previous").classList.remove('disabled');
+    if (currentPage-1 == 0) {
+      document.getElementById("previous").classList.add('disabled');
+    }
+    currentPage--;
+    console.log(currentPage);
+    populateTable(experiences, currentPage);
+  }
+});
