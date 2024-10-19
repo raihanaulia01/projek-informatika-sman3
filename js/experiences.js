@@ -16,7 +16,7 @@ const experiencesData = fetch('js/projectExperiences.json')
   });
 
 let currentPage = 0;
-let rowsPerPage = 100;
+let rowsPerPage = 10;
 
 const populateTable = (data, page) => {
   const tableBody = document.querySelector("#project-experiences-table tbody");
@@ -30,18 +30,22 @@ const populateTable = (data, page) => {
 
     const yearCell = document.createElement('td');
     yearCell.textContent = project.year;
+    yearCell.classList.add('year-cell');
     row.appendChild(yearCell);
 
     const descCell = document.createElement('td');
     descCell.textContent = project.project_desc;
+    descCell.classList.add('desc-cell');
     row.appendChild(descCell);
 
     const categoryCell = document.createElement('td');
     categoryCell.textContent = project.category;
+    categoryCell.classList.add('category-cell');
     row.appendChild(categoryCell);
 
     const clientCell = document.createElement('td');
     clientCell.textContent = project.client;
+    clientCell.classList.add('client-cell');
     row.appendChild(clientCell);
 
     tableBody.appendChild(row);
@@ -53,7 +57,7 @@ document.getElementById("next").addEventListener("click", (e) => {
   if ((currentPage + 1) * rowsPerPage < experiences.length) {
     document.getElementById("next").classList.remove('disabled');
     document.getElementById("previous").classList.remove('disabled');
-    
+
     if ((currentPage+2)*rowsPerPage > experiences.length) {
       document.getElementById("next").classList.add('disabled');
     }
