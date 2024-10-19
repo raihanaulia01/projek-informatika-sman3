@@ -1,4 +1,5 @@
 import collapsibleHandler from "./collapsibles.js";
+import { articles } from "./articlesData.js";
 
 const companyLogosWrapper = document.getElementById("company-logos");
 const scrollers = document.querySelectorAll(".scroll-container");
@@ -14,6 +15,12 @@ const scrollers = document.querySelectorAll(".scroll-container");
 // }
 
 collapsibleHandler("solution__wrapper", "collapsible");
+
+const formatDate = (date) => {
+  const dateObj = new Date(date);
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  return dateObj.toLocaleDateString('en-US', options);
+}
 
 const populateRealLogos = (logosWrapper) => {
   const logoFileNames = [
@@ -59,6 +66,23 @@ const addAnimation = () => {
   });
 }
 
+const articlesWrapper = document.querySelector("#article-wrapper");
+
+for (let i = (articles.length - 1); i > (articles.length - 5); i--) {
+  const article = articles[i]
+  const articleDiv = document.createElement("div");
+  articleDiv.className = "article";
+  articleDiv.innerHTML = `
+    <h3 class="article-title">${article.title}</h3>
+    <div class="date">
+      <img src="img/icons/calendar-days-solid.svg" class="calendar-img">
+      <span>${formatDate(article.date)}</span>
+    </div>
+    <p class="article-description">${article.description === null ? "No description":article.description}</p>
+    <a href="article.html?id=${article.id}" class="article-link">Read more</a>
+  `;
+  articlesWrapper.appendChild(articleDiv);
+}
 
 // populatePlaceholderLogos(companyLogosWrapper);
 populateRealLogos(companyLogosWrapper);

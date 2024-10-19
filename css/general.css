@@ -25,6 +25,7 @@ span,
 a,
 li {
   color: var(--text);
+  line-height: 1.6;
 }
 
 button.primary {
@@ -94,6 +95,10 @@ body {
 main {
   flex-grow: 1;
   margin: 10rem auto 2rem auto;
+}
+
+section:last-child {
+  margin-bottom: 4rem;
 }
 
 nav {
@@ -193,6 +198,18 @@ nav .links .dropdown-content {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+a {
+  color: var(--primary);
+
+  &:hover {
+    color: var(--primary-hover);
+  }
+
+  &:active {
+    color: var(--primary-active);
+  }
 }
 
 footer {

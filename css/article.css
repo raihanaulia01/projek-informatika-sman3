@@ -1,3 +1,95 @@
 @import url(variables.css);
 @import url(general.css);
 @import url(general-responsive.css);
+
+section {
+  width: var(--max-width);
+
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
+}
+
+section.article-info {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  .info-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .date,
+  .author {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  img {
+    height: 1rem;
+  }
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+p {
+  line-height: 1.6;
+}
+
+section>ul,
+section>ol {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+ul,
+ol {
+  margin-left: 1rem;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+b {
+  font-weight: bold;
+}
+
+.arrow:has(a.disabled) {
+  filter: brightness(50%);
+
+  a:hover {
+    cursor: default;
+    color: var(--primary);
+  }
+
+  a:active {
+    color: var(--primary);
+  }
+}
+
+section#other-articles {
+  margin-top: 4rem;
+  border-top: 1px solid var(--secondary);
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  .arrow {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .arrow img {
+    height: 1rem;
+  }
+}
