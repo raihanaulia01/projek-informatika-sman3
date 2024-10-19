@@ -131,12 +131,6 @@ section.solutions {
   }
 }
 
-.buttons {
-  margin-top: .4rem;
-  display: flex;
-  gap: 1rem;
-}
-
 section.contact {
   display: flex;
   flex-direction: column;

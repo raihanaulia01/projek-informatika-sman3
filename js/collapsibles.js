@@ -17,7 +17,7 @@ const collapsibleHandler = (wrappersClass, collapsiblesClass) => {
       collapsibles[i].classList.toggle("active");
       const link = document.querySelector(`#solution${i+1} a`);
       link.textContent === "See more" ? link.textContent="Collapse" : link.textContent="See more";
-      scrollToElement(wrappers[i]);
+      // scrollToElement(wrappers[i]);
     });
 
     const links = document.querySelectorAll(`.${wrappersClass} a`);

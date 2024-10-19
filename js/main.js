@@ -2,8 +2,6 @@ import collapsibleHandler from "./collapsibles.js";
 
 const companyLogosWrapper = document.getElementById("company-logos");
 const scrollers = document.querySelectorAll(".scroll-container");
-const collapsibles = document.getElementsByClassName("collapsible");
-const solutionWrappers = document.getElementsByClassName("solution__wrapper");
 
 // const populatePlaceholderLogos = (logosWrapper) => {
 //   const url = "img/company-logos/Group-";

@@ -73,6 +73,12 @@ button.secondary:active {
   box-shadow: 0 0 70px var(--primary-box-shadow);
 }
 
+.buttons {
+  margin-top: .4rem;
+  display: flex;
+  gap: 1rem;
+}
+
 body {
   background-color: var(--background);
   background: radial-gradient(ellipse at center, hsl(210, 40%, 7%) 0%, var(--background) 50%);

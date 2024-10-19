@@ -1,84 +1,59 @@
 @import url(variables.css);
 @import url(general.css);
-@import url(general-responsive.css);
-
-main {
-  margin-top: 13rem;
-}
 
 section {
   max-width: var(--max-width);
+  margin-top: 4rem;
 }
 
 section.header {
   display: flex;
-  justify-content: space-between;
+  gap: 4rem;
   align-items: center;
-  gap: 2rem;
 
   h1 {
-    font-size: clamp(1.5rem, 2vw, 3rem);
-    ;
-    /* color: var(--primary); */
+    font-size: var(--h1-size);
   }
 
-  p {
-    margin-top: 1rem;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   img {
-    width: min(40vw, 550px);
-    aspect-ratio: 4/2;
-    object-fit: cover;
+    width: min(30vw, 500px);
     border-radius: var(--border-radius);
   }
 }
 
-section.ict-solutions {
+section.data-access {
   margin-top: 6rem;
-
-  h2,
-  p#tag {
-    text-align: center;
-  }
-
-  p#tag {
-    margin-top: .5rem;
-  }
+  display: flex;
+  align-items: center;
 
   .wrapper {
-    margin-top: 4rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2rem;
+    flex-basis: 50%;
   }
 
-  .wrapper .card {
+  .wrapper:not(:has(img)) {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* gap: 1rem; */
-    width: 300px;
+    gap: 1rem;
+  }
 
-    h3 {
-      width: 100%;
-    }
+  .wrapper:has(img) {
+    display: flex;
+    justify-content: center;
+  }
 
-    p {
-      margin-top: .5rem;
-      text-align: left;
-    }
-
-    img {
-      width: 50%;
-      margin: 2rem;
-      /* filter: invert(.8); */
-    }
+  img {
+    width: 10vw;
   }
 }
 
-section.benefits {
+
+section.offers {
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
@@ -109,22 +84,25 @@ section.benefits {
   }
 
   .card img {
-    width: 100px;
     height: 100px;
     padding: 0 1rem;
   }
 }
 
-@media (width < 876px) {
-  section.header {
-    flex-direction: column;
+section.contact {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
 
-    img {
-      width: 80vw;
-    }
+  h2,
+  p {
+    text-align: center;
   }
+}
 
-  section.benefits {
+@media (width < 876px) {
+  section.offers {
     .wrapper {
       flex-wrap: wrap;
     }
@@ -137,29 +115,13 @@ section.benefits {
 }
 
 @media (width < 600px) {
-  main {
-    margin-top: 7rem;
-  }
 
-  section.header img {
-    width: 100%;
-  }
-
-  section.ict-solutions .wrapper .card {
-    width: 100%;
-
-    img {
-      width: 40vw;
-    }
-  }
-
-  section.benefits {
+  section.offers {
     &>div {
       flex-basis: 90%;
     }
 
     .benefits img {
-      width: 100px;
       height: 100px;
     }
 

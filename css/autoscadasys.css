@@ -35,12 +35,6 @@ section.header {
   }
 }
 
-.buttons {
-  margin-top: .4rem;
-  display: flex;
-  gap: 1rem;
-}
-
 section.services {
   margin-top: 4rem;
 

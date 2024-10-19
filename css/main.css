@@ -214,6 +214,41 @@ section.contact {
   }
 }
 
+section.articles {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+
+  .article {
+    padding: 1rem;
+    background-color: var(--background-elevated);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .article .date {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .article .calendar-img {
+    width: 1rem;
+  }
+}
+
 
 @media (width < 876px) {
   .tagline {
