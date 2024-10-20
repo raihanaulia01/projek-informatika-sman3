@@ -97,3 +97,9 @@ section#other-articles {
     height: 1rem;
   }
 }
+
+@media (width < 600px) {
+  section:first-child {
+    margin-top: 2rem;
+  }
+}
