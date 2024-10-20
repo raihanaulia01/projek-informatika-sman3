@@ -162,7 +162,7 @@ nav .logo h2 {
   font-size: 1.4rem;
 }
 
-.nav__wrapper .menu-icon {
+.nav__wrapper #menu-icon {
   display: none;
 }
 

@@ -131,7 +131,7 @@ section.solution {
   max-height: 0;
 }
 
-.active {
+.collapsible.active {
   max-height: fit-content;
 }
 

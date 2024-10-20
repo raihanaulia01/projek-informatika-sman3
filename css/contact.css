@@ -1,5 +1,6 @@
 @import url(variables.css);
 @import url(general.css);
+@import url(general-responsive.css);
 
 section {
   width: var(--max-width);

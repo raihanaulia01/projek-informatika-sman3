@@ -1,5 +1,6 @@
 @import url(variables.css);
 @import url(general.css);
+@import url(general-responsive.css);
 
 section {
   max-width: var(--max-width);
@@ -48,7 +49,7 @@ section.data-access {
   }
 
   img {
-    width: 10vw;
+    width: min(13vw, 200px);
   }
 }
 
@@ -107,6 +108,23 @@ section.contact {
 }
 
 @media (width < 876px) {
+  section.header {
+    flex-direction: column;
+
+    img {
+      width: 85vw;
+    }
+  }
+
+  section.data-access {
+    flex-direction: column;
+    gap: 2rem;
+
+    img {
+      width: clamp(120px, 20vw, 200px);
+    }
+  }
+
   section.offers {
     .wrapper {
       flex-wrap: wrap;
@@ -120,7 +138,6 @@ section.contact {
 }
 
 @media (width < 600px) {
-
   section.offers {
     &>div {
       flex-basis: 90%;
@@ -133,5 +150,9 @@ section.contact {
     .wrapper .card {
       flex-basis: 90%;
     }
+  }
+
+  .buttons {
+    flex-wrap: wrap;
   }
 }
