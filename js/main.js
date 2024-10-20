@@ -73,7 +73,7 @@ for (let i = (articles.length - 1); i > (articles.length - 5); i--) {
   const articleDiv = document.createElement("div");
   articleDiv.className = "article";
   articleDiv.innerHTML = `
-    <h3 class="article-title">${article.title}</h3>
+    <a href="article.html?id=${article.id}"><h3 class="article-title">${article.title}</h3></a>
     <div class="date">
       <img src="img/icons/calendar-days-solid.svg" class="calendar-img">
       <span>${formatDate(article.date)}</span>

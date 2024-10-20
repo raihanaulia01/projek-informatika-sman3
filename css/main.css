@@ -246,6 +246,18 @@ section.articles {
     width: 25%;
   }
 
+  .article a:has(h3) {
+    text-decoration: none;
+
+    h3:hover {
+      color: var(--text-hover);
+    }
+
+    h3:active {
+      color: var(--primary);
+    }
+  }
+
   .article-link {
     width: fit-content;
   }
