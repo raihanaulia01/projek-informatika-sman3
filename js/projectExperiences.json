@@ -901,7 +901,7 @@
 },
 {
     "year": "2018",
-    "project_desc": "Oracle EAM Reconfiguration Â– PT. Perusahaan Gas Negara",
+    "project_desc": "Oracle EAM Reconfiguration - PT. Perusahaan Gas Negara",
     "category": "Maintenance, Safety and Risk Management",
     "client": "PT Teknologi Anak Bangsa"
 },
@@ -1183,7 +1183,7 @@
 },
 {
     "year": "2015",
-    "project_desc": "Pengadaan Enhancement SOT Â– Pembuatan Sistem Handheld SOT",
+    "project_desc": "Pengadaan Enhancement SOT - Pembuatan Sistem Handheld SOT",
     "category": "Production Data Management System",
     "client": "SKK Migas"
 },
@@ -1207,13 +1207,13 @@
 },
 {
     "year": "2015",
-    "project_desc": "Support to Tiara Jaya Tunggal Mandiri for Â“O?shore CCTV Maintenance Service Â– Conoco Phillips IndonesiaÂ”",
+    "project_desc": "Support to Tiara Jaya Tunggal Mandiri for Â“O?shore CCTV Maintenance Service - Conoco Phillips IndonesiaÂ”",
     "category": "Maintenance Service",
     "client": "Tiara Jaya Tunggal Mandiri"
 },
 {
     "year": "2015",
-    "project_desc": "Support to Suplintama Maju Semesta for Â“Sieger-Honeywell Fire & Gas System Maintenance Services Â– Conoco Phillips IndonesiaÂ”",
+    "project_desc": "Support to Suplintama Maju Semesta for Â“Sieger-Honeywell Fire & Gas System Maintenance Services - Conoco Phillips IndonesiaÂ”",
     "category": "Maintenance Service",
     "client": "Suplintama Maju Semesta"
 },
@@ -1267,13 +1267,13 @@
 },
 {
     "year": "2014",
-    "project_desc": "Sistem Operasi TerpaduÂ–Prototyping PRODML, WITSML, dan PPDM Data Mapping 2014",
+    "project_desc": "Sistem Operasi Terpadu-Prototyping PRODML, WITSML, dan PPDM Data Mapping 2014",
     "category": "Production Data Management System",
     "client": "SKK Migas"
 },
 {
     "year": "2014",
-    "project_desc": "Sistem Operasi TerpaduÂ–Pemetaan Data KKKS Dalam PRODML dan WITSML",
+    "project_desc": "Sistem Operasi Terpadu-Pemetaan Data KKKS Dalam PRODML dan WITSML",
     "category": "Production Data Management System",
     "client": "SKK Migas"
 },
@@ -1291,15 +1291,15 @@
 },
 {
     "year": "2014",
-    "project_desc": "Implementation of Risk Based Inspection (RBI) Study Interfacing with Jambi MerangÂ’s SAP Â– PM Module",
+    "project_desc": "Implementation of Risk Based Inspection (RBI) Study Interfacing with Jambi MerangÂ’s SAP - PM Module",
     "category": "Maintenance, Safety and Risk Management",
-    "client": "JOB Pertamina Â– Talisman Jambi Merang"
+    "client": "JOB Pertamina - Talisman Jambi Merang"
 },
 {
     "year": "2014",
-    "project_desc": "Implementation of Reliability Centered Maintenance (RCM) Study Interfacing with Jambi MerangÂ’s SAP Â– PM Module",
+    "project_desc": "Implementation of Reliability Centered Maintenance (RCM) Study Interfacing with Jambi MerangÂ’s SAP - PM Module",
     "category": "Maintenance, Safety and Risk Management",
-    "client": "JOB Pertamina Â– Talisman Jambi Merang"
+    "client": "JOB Pertamina - Talisman Jambi Merang"
 },
 {
     "year": "2014",
@@ -1353,7 +1353,7 @@
     "year": "2014",
     "project_desc": "CCTV Maintenance Service for Belanak Crane",
     "category": "Integrated Security",
-    "client": "KMG Â– Conoco Phillips Indonesia"
+    "client": "KMG - Conoco Phillips Indonesia"
 },
 {
     "year": "2013-2014",
@@ -1375,13 +1375,13 @@
 },
 {
     "year": "2013",
-    "project_desc": "Sembilang Reactivation Plan Conceptual Study Â– Pre FEED",
+    "project_desc": "Sembilang Reactivation Plan Conceptual Study - Pre FEED",
     "category": "Energy Design and Study",
     "client": "PT Mandiri Panca Usaha"
 },
 {
     "year": "2013",
-    "project_desc": "Studi Pembangunan Jaringan Transmisi Pipa Gas Di Wilayah Sumatera Selatan Â– Jambi untuk Interkoneksi Lapangan Gas ke Pabrik PT. Pupuk Sriwidjaja Palembang",
+    "project_desc": "Studi Pembangunan Jaringan Transmisi Pipa Gas Di Wilayah Sumatera Selatan - Jambi untuk Interkoneksi Lapangan Gas ke Pabrik PT. Pupuk Sriwidjaja Palembang",
     "category": "Energy Design and Study",
     "client": "PT. Pupuk Sriwidjaja Palembang"
 },
@@ -1477,7 +1477,7 @@
 },
 {
     "year": "2011",
-    "project_desc": "OPC System and Dewpoint Upgrade Â– Natuna Sea Block A",
+    "project_desc": "OPC System and Dewpoint Upgrade - Natuna Sea Block A",
     "category": "Scada and Automation System",
     "client": "Premier Oil"
 },
@@ -1572,7 +1572,7 @@
     "client": "BPOM (Badan Pengawas Obat-obatan dan Makanan)"
 },
 {
-    "year": "2009 Â– 2010",
+    "year": "2009 - 2010",
     "project_desc": "Control Real Time System Blanket Services",
     "category": "Scada and Automation System",
     "client": "ConocoPhillips Indonesia Inc. Ltd"
@@ -1626,7 +1626,7 @@
     "client": "PT. Pertamina Gas"
 },
 {
-    "year": "2008 Â– 2009",
+    "year": "2008 - 2009",
     "project_desc": "IT Maintenance Service",
     "category": "Custom Solution, IT, and Application Development",
     "client": "PT. BAT Indonesia"
@@ -1698,7 +1698,7 @@
     "client": "PT. Sanbe Farma"
 },
 {
-    "year": "2007 Â– 2008",
+    "year": "2007 - 2008",
     "project_desc": "Automation Engineering Blanket Call-Out Service",
     "category": "Scada and Automation System",
     "client": "ConocoPhillips Indonesia Inc. Ltd"
@@ -1728,7 +1728,7 @@
     "client": "PT. Lucky Abadi"
 },
 {
-    "year": "2006 Â– 2007",
+    "year": "2006 - 2007",
     "project_desc": "Production and Operation Application Support Services",
     "category": "Production Data Management System",
     "client": "ConocoPhillips Indonesia Inc. Ltd"
@@ -1885,7 +1885,7 @@
 },
 {
     "year": "2003",
-    "project_desc": "Lifting and Well Monitoring Â– GSP Software",
+    "project_desc": "Lifting and Well Monitoring - GSP Software",
     "category": "Production Data Management System",
     "client": "ConocoPhillips Indonesia Inc. Ltd"
 },

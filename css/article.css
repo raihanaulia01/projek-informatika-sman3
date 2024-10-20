@@ -66,13 +66,17 @@ b {
 .arrow:has(a.disabled) {
   filter: brightness(50%);
 
-  a:hover {
-    cursor: default;
-    color: var(--primary);
-  }
+  a {
+    text-decoration: none;
 
-  a:active {
-    color: var(--primary);
+    &:hover {
+      cursor: default;
+      color: var(--primary);
+    }
+
+    &:active {
+      color: var(--primary);
+    }
   }
 }
 

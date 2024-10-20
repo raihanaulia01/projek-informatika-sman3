@@ -42,9 +42,14 @@
     right: 0;
   }
 
+  .nav__wrapper {
+    gap: 1rem;
+  }
+
   .nav__wrapper #menu-icon {
     display: block;
-    width: 1.5rem;
+    width: max(5%, 2rem);
+    padding: .5rem;
     color: var(--text);
     cursor: pointer;
   }
@@ -60,8 +65,10 @@
   }
 
   nav .logo h2 {
-    font-size: 4vw;
+    font-size: max(4vw, 1rem);
   }
+
+  .nav__wrapper {}
 
   nav {
     padding: .5rem;

@@ -11,6 +11,8 @@ const formatDate = (date) => {
 }
 
 if (article) {
+  document.title = article.title + " - SPC";
+
   document.getElementById("article-title").textContent = article.title;
   document.getElementById("article-author").textContent = "By " + article.author;
   document.getElementById("article-date").textContent = formatDate(article.date);
