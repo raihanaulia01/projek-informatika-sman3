@@ -2,6 +2,10 @@
 @import url(general.css);
 @import url(general-responsive.css);
 
+:root {
+  --map-height: 350px;
+}
+
 section {
   width: var(--max-width);
   margin: 0 auto;
@@ -51,10 +55,31 @@ section.contact {
   align-items: center;
 }
 
+.mapouter {
+  margin-top: 1rem;
+  position: relative;
+  text-align: right;
+  width: 85%;
+  height: var(--map-height);
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  border-radius: var(--border-radius);
+  width: 100%;
+  height: var(--map-height);
+}
+
+.gmap_iframe {
+  height: var(--map-height) !important;
+}
+
 .contact .message {
   border-radius: var(--border-radius);
   background-color: var(--background-elevated);
   padding: 2rem;
+  height: fit-content;
 }
 
 .contact .message form {
@@ -89,44 +114,18 @@ section.contact {
 }
 
 .message form button {
-  font-weight: 500;
-  padding: .7rem 1.5rem;
   width: fit-content;
   margin-top: 1.5rem;
-  background-color: var(--primary);
-  border: none;
-  border-radius: var(--border-radius);
-  transition: background-color 100ms ease-out, box-shadow 150ms ease;
-}
-
-.message form button:hover {
-  background-color: var(--primary-hover);
-  box-shadow: 0 0 35px var(--primary-box-shadow);
-}
-
-.message form button:active {
-  background-color: var(--primary-active);
-  box-shadow: 0 0 50px var(--primary-box-shadow);
-}
-
-footer {
-  border-top: 1px solid var(--secondary-hover);
-  text-align: center;
-  padding: 2rem;
-}
-
-footer p:first-child {
-  margin-bottom: 1rem;
-}
-
-footer span {
-  color: var(--accent);
 }
 
 @media (width < 876px) {
   section.contact {
     flex-direction: column;
     margin-top: 2rem;
+  }
+
+  .mapouter {
+    width: 100%;
   }
 
   .contact .address {
