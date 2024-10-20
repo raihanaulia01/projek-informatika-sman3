@@ -11,6 +11,10 @@ section {
   max-width: var(--max-width);
 }
 
+section:not(:first-child) {
+  margin-top: 4rem;
+}
+
 .section-1 {
   display: flex;
   align-items: center;
@@ -107,6 +111,18 @@ section.experiences {
 
   a:active {
     color: var(--primary);
+  }
+}
+
+section.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  h2,
+  p {
+    text-align: center;
   }
 }
 

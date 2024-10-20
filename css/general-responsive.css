@@ -83,4 +83,16 @@
   .buttons {
     flex-wrap: wrap;
   }
+
+  footer .footer-info {
+    flex-wrap: wrap;
+
+    .footer-spc {
+      flex-basis: 100%;
+    }
+
+    .wrapper {
+      align-items: flex-start;
+    }
+  }
 }
